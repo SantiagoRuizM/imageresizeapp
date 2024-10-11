@@ -17,7 +17,7 @@ def center_image(image, output_size=(500, 500)):
     resized_image = cv2.resize(image, (new_w, new_h))
 
     # Crear un lienzo del tamaño deseado con un color de fondo (negro)
-    canvas = np.zeros((output_size[1], output_size[0], 3), dtype=np.uint8)
+    canvas = np.zeros((output_size[1], output_size[0], 3), (0, 100, 0), dtype=np.uint8)
 
     x_offset = (output_size[0] - new_w) // 2
     y_offset = (output_size[1] - new_h) // 2
